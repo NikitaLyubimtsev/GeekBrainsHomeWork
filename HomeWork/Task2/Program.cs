@@ -15,4 +15,4 @@ if (b > max) {
     min = b;
 }
 
-WriteLine($"Максимальное, из введённых чисел: {max}, минимальное {min}.");
+WriteLine($"max = {max}, min = {min}.");
