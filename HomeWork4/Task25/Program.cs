@@ -13,4 +13,8 @@ int DegreeOfNumber(int a, int b)
     }
     return res;
 }
-WriteLine(DegreeOfNumber(3, 5));
+Write("Введите число которое необходимо возвести в степень: ");
+int.TryParse(ReadLine(), out int a);
+Write("Введите степень в которую необходимо возвести число: ");
+int.TryParse(ReadLine(), out int b);
+WriteLine(DegreeOfNumber(a, b));
