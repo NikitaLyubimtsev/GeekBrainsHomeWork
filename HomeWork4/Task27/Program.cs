@@ -13,4 +13,5 @@ int SumDigitsNumber(int num)
 }
 
 Write("Введите любое число, что бы получить сумму его цифр: ");
-WriteLine(SumDigitsNumber(int.Parse(ReadLine())));
+if (int.TryParse(ReadLine(), out int num)) WriteLine(SumDigitsNumber(num));
+else Write("Ошибка ввода, возможно вывели не число!");
