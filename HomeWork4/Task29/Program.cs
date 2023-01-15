@@ -17,4 +17,4 @@ void RandomNumArray(int len)
 
 Write("Введите длину массива: ");
 if (int.TryParse(ReadLine(), out int len)) RandomNumArray(len);
-else Write("Ошибка ввода!");
+else Write("Ошибка ввода, возможно вы ввели не число!");
