@@ -32,13 +32,13 @@ int[] randomArray()
     return random_numbers_array;
 }
 
-int evenNumbCount()
+int evenNumbCount(int[] arr)
 {
     int cnt = 0;
-    foreach(int num in randomArray()) {
+    foreach(int num in arr) {
         if ((num % 2) == 0) cnt++;
     }
     return cnt;
 }
 
-Write(evenNumbCount());
+Write(evenNumbCount(randomArray()));
