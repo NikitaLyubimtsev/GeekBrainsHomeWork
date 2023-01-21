@@ -18,7 +18,7 @@ int evenNumbersCount()
     return cnt;
 }
 
-//Write(evenNumbersCount());
+Write(evenNumbersCount());
 
 // Variant 2
 int[] randomArray()

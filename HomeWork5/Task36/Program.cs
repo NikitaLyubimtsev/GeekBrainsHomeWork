@@ -12,6 +12,7 @@ int[] randNumbersArray()
     }
     return arr;
 }
+
  int? sumOddIdx(int[] arr)
  {
     int sum = 0;
