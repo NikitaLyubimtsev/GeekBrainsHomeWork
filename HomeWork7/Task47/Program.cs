@@ -21,7 +21,7 @@ void PrintArray(double[,] arr)
     }
 }
 
-void FillArray(double[,] matr)
+void FillRealNumberArray(double[,] matr)
 {
     for(int i = 0; i < matr.GetLength(0); i++) {
         for(int j = 0; j < matr.GetLength(1); j++) {
@@ -33,7 +33,7 @@ void FillArray(double[,] matr)
 double[,] GetMatrix(int m, int n)
 {
     double[,] matrix = new double[m, n];
-    FillArray(matrix);
+    FillRealNumberArray(matrix);
     return matrix;
 }
 
