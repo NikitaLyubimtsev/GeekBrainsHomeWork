@@ -58,6 +58,7 @@ int[,] GetMatrix(SizeMatrix size)
     if (size.column == size.rows)
     {
         WriteLine("Ошибка ввода!");
+        Environment.Exit(1);
     }
     else
     {
@@ -69,7 +70,7 @@ int[,] GetMatrix(SizeMatrix size)
 SizeMatrix AskToUserSizeMatrix()
 {
     SizeMatrix size = new SizeMatrix();
-    Write("Введите размеры создаваемого массива через знак ','. Стначала число строк потом число столбцов: ");
+    Write("Введите размеры создаваемого прямоугольного массива через знак ','. Сначала число строк потом число столбцов: ");
     string[] inputOfArray = ReadLine()!.Split(",", StringSplitOptions.RemoveEmptyEntries);
 
     if (int.TryParse(inputOfArray[0], out int rows) &
@@ -78,6 +79,9 @@ SizeMatrix AskToUserSizeMatrix()
         {
             size.rows = rows;
             size.column = column;
+        } else {
+            WriteLine("Ошибка ввода!");
+            Environment.Exit(1);
         }
     return size;
 }
