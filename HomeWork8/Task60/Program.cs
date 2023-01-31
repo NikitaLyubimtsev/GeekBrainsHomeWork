@@ -44,7 +44,7 @@ int[,,] GetMatrix(SizeMatrix size)
 SizeMatrix AskToUserSizeMatrix()
 {
     SizeMatrix size = new SizeMatrix();
-    Write("Введите размеры создаваемого трёхмерного массива через знак ','. Сначала число строк потом число столбцов затем глубину: ");
+    Write("Введите размеры создаваемой трёхмерной матрицы через знак ','. Сначала число строк потом число столбцов затем глубину: ");
     string[] inputOfArray = ReadLine()!.Split(",", StringSplitOptions.RemoveEmptyEntries);
 
     if (int.TryParse(inputOfArray[0], out int x) &

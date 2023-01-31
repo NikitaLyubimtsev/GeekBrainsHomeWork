@@ -61,7 +61,7 @@ int[,] GetMatrix(SizeMatrix size)
 SizeMatrix AskToUserSizeMatrix()
 {
     SizeMatrix size = new SizeMatrix();
-    Write("Введите размеры создаваемого массива через знак ','. Стначала число строк потом число столбцов: ");
+    Write("Введите размеры создаваемой двухмерной матрицы через знак ','. Сначала число строк потом число столбцов: ");
     string[] inputOfArray = ReadLine()!.Split(",", StringSplitOptions.RemoveEmptyEntries);
 
     if (int.TryParse(inputOfArray[0], out int rows) &
